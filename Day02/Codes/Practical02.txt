@@ -1,0 +1,112 @@
+pwd(Print Working Directory) - Shows the full path of the current directory.
+{ ~ }  » pwd                                                                                              ~ 1
+/home/Manoj
+
+who - Shows a list of users currently logged into the system.
+{ ~ }  » who 
+
+{ ~ }  » awk                                                                                                ~
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] 'program' file ...
+POSIX options:          GNU long options: (standard)
+        -f progfile             --file=progfile
+        -F fs                   --field-separator=fs
+        -v var=val              --assign=var=val
+Short options:          GNU long options: (extensions)
+        -b                      --characters-as-bytes
+        -c                      --traditional
+        -C                      --copyright
+        -d[file]                --dump-variables[=file]
+        -D[file]                --debug[=file]
+        -e 'program-text'       --source='program-text'
+        -E file                 --exec=file
+        -g                      --gen-pot
+        -h                      --help
+        -i includefile          --include=includefile
+        -l library              --load=library
+        -L [fatal]              --lint[=fatal]
+        -n                      --non-decimal-data
+        -M                      --bignum
+        -N                      --use-lc-numeric
+        -o[file]                --pretty-print[=file]
+        -O                      --optimize
+        -p[file]                --profile[=file]
+        -P                      --posix
+        -r                      --re-interval
+        -S                      --sandbox
+        -t                      --lint-old
+        -V                      --version
+
+To report bugs, see node `Bugs' in `gawk.info', which is
+section `Reporting Problems and Bugs' in the printed version.
+
+gawk is a pattern scanning and processing language.
+By default it reads standard input and writes standard output.
+
+Examples:
+        gawk '{ sum += $1 }; END { print sum }' file
+        gawk -F: '{ print $1 }' /etc/passwd
+
+
+{ ~ }  » sed                                                                                              ~ 1
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -r, --regexp-extended
+                 use extended regular expressions in the script.
+  -s, --separate
+                 consider files as separate rather than as a single continuous
+                 long stream.
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <http://www.gnu.org/software/sed/>.
+General help using GNU software: <http://www.gnu.org/gethelp/>.
+
+
+{ ~ }  » ls -a                                                                                            ~ 4
+.              .bashrc        .local      .profile    .zcompdump-DESKTOP-LMT4M19-5.0.6  abc.txt    mano.txt
+..             .cake.txt.un~  .minttyrc   .vim        .zsh_history                      bin
+.babunrc       .gitconfig     .oh-my-zsh  .viminfo    .zshrc                            cake.txt
+.bash_profile  .inputrc       .pact       .zcompdump  .zsh-update                       cake.txt~
+
+
+{ ~ }  » ls -a                                                                                            ~ 1
+.              .bashrc        .local      .profile    .zcompdump-DESKTOP-LMT4M19-5.0.6  abc.txt    mano.txt
+..             .cake.txt.un~  .minttyrc   .vim        .zsh_history                      bin
+.babunrc       .gitconfig     .oh-my-zsh  .viminfo    .zshrc                            cake.txt
+.bash_profile  .inputrc       .pact       .zcompdump  .zsh-update                       cake.txt~
+
+
+Other ls Commands:
+
+ls	Lists only visible files.
+ls -l	  Long format (detailed view).
+ls -lh	  Long format with human-readable sizes.
+ls -la	  Long format + show hidden files.
+ls -ltr	  Sorts files by time, oldest first.

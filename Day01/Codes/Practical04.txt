@@ -1,2 +1,75 @@
-touch - create a file
-[Manoj@DESKTOP-] 
+
+touch - create a file.
+
+{ ~ }  » touch cake.txt   
+
+vi - Open a file
+	Switch to Insert Mode (to start typing):
+	>>Press i (insert) or a (append).
+
+	Save and Exit:
+	>>Press ctrl + c, then type :wq! and press Enter.
+
+{ ~ }  » vi cake.txt  
+
+more - give the data inside the file.
+
+{ ~ }  » more cake.txt                                                                                    ~ 1
+Cup cake
+Roll Cake
+Butter cake
+Icing cake
+blueberry cake
+
+
+dir - display all the files in the directory.
+dir *.txt - display all the files with .txt extension.
+
+{ ~ }  » dir *.txt                                                                                          ~
+abc.txt  cake.txt  mano.txt
+
+
+find - search for files and directories.
+find *b* - search for all the directories and files with the character "b"
+
+{ ~ }  » find *b*                                                                                           ~
+abc.txt
+
+chmod(Change Mode) – file permission command.
+444 - file is read only for user, server and admin.
+
+{ ~ }  » chmod 444 cake.txt                                                                                 ~
+{ ~ }  » ls -l                                                                                              ~
+total 2
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:04 abc.txt
+lrwxrwxrwx  1 Manoj None 22 Apr 27 21:12 bin -> /home/Manoj/.local/bin
+-r--r--r--+ 1 Manoj None 58 Apr 27 22:04 cake.txt
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:01 cake.txt~
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:05 mano.txt
+
+777 - Anyone(user, server and admin) can read write and execute cake.txt file.
+
+{ ~ }  » chmod 777 cake.txt                                                                                 ~
+{ ~ }  » ls -1                                                                                              ~
+abc.txt
+bin
+cake.txt
+cake.txt~
+mano.txt
+{ ~ }  » ls -l                                                                                              ~
+total 2
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:04 abc.txt
+lrwxrwxrwx  1 Manoj None 22 Apr 27 21:12 bin -> /home/Manoj/.local/bin
+-rwxrwxrwx+ 1 Manoj None 58 Apr 27 22:04 cake.txt
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:01 cake.txt~
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:05 mano.txt
+
+
+{ ~ }  » chmod 547 cake.txt                                                                                 ~
+{ ~ }  » ls -l                                                                                              ~
+total 2
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:04 abc.txt
+lrwxrwxrwx  1 Manoj None 22 Apr 27 21:12 bin -> /home/Manoj/.local/bin
+-r-xr--rwx+ 1 Manoj None 58 Apr 27 22:04 cake.txt
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:01 cake.txt~
+-rw-rwxr--+ 1 Manoj None  0 Apr 27 22:05 mano.txt
