@@ -29,7 +29,7 @@ set /a date=%date:~7,2%
 27echo Date : %date%
 Date : 27
 
-:: diplay only the month
+:: display only month
 set month=%date:~4,2%
 echo Month: %month%
 Month: %month%
