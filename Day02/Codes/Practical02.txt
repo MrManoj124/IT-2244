@@ -3,7 +3,11 @@ pwd(Print Working Directory) - Shows the full path of the current directory.
 /home/Manoj
 
 who - Shows a list of users currently logged into the system.
+<<<<<<< HEAD
 { ~ }  » who 
+=======
+{ ~ }  » who
+>>>>>>> c439829ca34639ea0725e413a2abb52a24030203
 
 { ~ }  » awk                                                                                                ~
 Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
@@ -108,5 +112,9 @@ Other ls Commands:
 ls	Lists only visible files.
 ls -l	  Long format (detailed view).
 ls -lh	  Long format with human-readable sizes.
+<<<<<<< HEAD
 ls -la	  Long format + show hidden files.
+=======
+ls -la	  Long format and show hidden files.
+>>>>>>> c439829ca34639ea0725e413a2abb52a24030203
 ls -ltr	  Sorts files by time, oldest first.
