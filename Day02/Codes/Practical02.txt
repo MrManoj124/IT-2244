@@ -108,5 +108,5 @@ Other ls Commands:
 ls	Lists only visible files.
 ls -l	  Long format (detailed view).
 ls -lh	  Long format with human-readable sizes.
-ls -la	  Long format + show hidden files.
+ls -la	  Long format and show hidden files.
 ls -ltr	  Sorts files by time, oldest first.
