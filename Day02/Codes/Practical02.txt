@@ -3,7 +3,7 @@ pwd(Print Working Directory) - Shows the full path of the current directory.
 /home/Manoj
 
 who - Shows a list of users currently logged into the system.
-{ ~ }  » who 
+{ ~ }  » who
 
 { ~ }  » awk                                                                                                ~
 Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
