@@ -1,0 +1,123 @@
+cal - display the calander.
+{ ~ }  » cal                                                                                    ~
+     April 2025
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+
+
+date +%d - display the date 'DD' format.
+{ ~ }  » date +%d                                                                               ~
+28
+
+date +%m - display the month in 'MM' format.
+{ ~ }  » date +%m                                                                               ~
+04
+
+date +%y - display the year in 'YY' format.
+{ ~ }  » date +%y                                                                               ~
+25
+
+date +%D - display the date in 'MM/DD/YY' format.
+{ ~ }  » date +%D                                                                               ~
+04/28/25
+
+date +%Y - display the year in 'YYYY' format.
+{ ~ }  » date +%Y                                                                               ~
+2025
+
+date +%B - display the month in word format.
+{ ~ }  » date +%B                                                                               ~
+April
+
+date +%b - display the month in word format.
+{ ~ }  » date +%b                                                                               ~
+Apr
+
+date +%A - display the day in word format.
+{ ~ }  » date +%A                                                                               ~
+Monday
+
+date +%a - display the day in word format.
+{ ~ }  » date +%a                                                                               ~
+Mon
+
+date +%h - display the month in word format.
+{ ~ }  » date +%h                                                                               ~
+Apr
+
+//Example 01
+
+{ ~ }  » vi Example.sh   
+
+echo "Who are you?"
+read name
+echo "Enter number 1"
+read x
+echo "Enter number 2"
+read y
+echo "Enter number 3"
+read z
+
+sum=$(($x+$y+$z))
+avg=$(($sum/3))
+echo "Hi" $name
+echo "Summation	" $sum
+echo "Average	" $avg
+
+{ ~ }  » ls                                                                                     ~
+abc.txt  bin  cake.txt  cake.txt~  Example.sh  mano.tsv  mano.tsv~  mano.txt
+
+{ ~ }  » chmod 777 example.sh  
+{ ~ }  » ./example.sh                                                                       ~ 126
+Who are you ?
+Manorooban
+Enter number 1
+12
+Enter number 2
+24
+Enter number 3
+25
+Hi Manorooban
+Summation        61
+Average  20
+
+
+//Example 02
+Read two number from user and print 
+addition, subtraction, multiplication and divition.
+
+{ ~ }  » vi example01.sh  
+
+echo "Enter a"
+read a
+echo "Enter number b"
+read b
+
+sum=$(($a+$b))
+sub=$(($a-$b))
+mul=$(($a*$b))
+div=$(($a/$b))
+
+echo "Summation	" $sum
+echo "Subtraction	" $sub
+echo "Multiplication	" $mul
+echo "Division	" $div
+
+{ ~ }  » ls                                                                                     ~
+abc.txt  bin  cake.txt  cake.txt~  Example.sh  example01.sh  mano.tsv  mano.tsv~  mano.txt
+
+{ ~ }  » chmod 777 example01.sh 
+
+{ ~ }  » ./example01.sh 
+Enter a:
+10
+Enter b:
+5
+Summation:  15
+Subtraction:  5
+Multiplication:  50
+Division:  2
