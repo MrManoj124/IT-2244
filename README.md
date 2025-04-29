@@ -11,3 +11,5 @@
 # 04.---Try to code with tsv files in linux commands---
 
 # 05---using csv files and use various commands --- 
+
+# 06---create a separate file through sh.files---
