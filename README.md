@@ -13,3 +13,5 @@
 # 05---using csv files and use various commands --- 
 
 # 06---create a separate file through sh.files---
+
+# 07---Do some mini tests to develop our practice with linux Commands
