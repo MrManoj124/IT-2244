@@ -14,4 +14,6 @@
 
 # 06---create a separate file through sh.files---
 
-# 07---Do some mini tests to develop our practice with linux Commands
+# 07---Do some mini tests to develop our practice with linux Commands---
+
+# 08---Practice with for loop function---
