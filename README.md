@@ -19,3 +19,5 @@
 # 08---Practice with for loop function---
 
 # 09---Do some practice Questions in linux commands---
+
+# 10---Practice Mathematical calculations for better understanding in linux commands---
