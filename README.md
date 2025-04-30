@@ -17,3 +17,5 @@
 # 07---Do some mini tests to develop our practice with linux Commands---
 
 # 08---Practice with for loop function---
+
+# 09---Do some practice Questions in linux commands---
