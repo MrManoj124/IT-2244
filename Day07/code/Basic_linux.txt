@@ -290,4 +290,7 @@ Enter number of Columns:
   * * *
  * * * *
 * * * * *
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a68ddbe20be32d6356728e26a7410aa331f28dc
